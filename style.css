@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+}
+div{
+    height: 30px;
+    width: 3px;
+    position: relative;
+}
+div:nth-child(n){
+    background-color: chartreuse;
+    animation-delay: 500ms;
+}
+div:nth-child(2n){
+    background-color: crimson;
+    animation-delay: 200ms;
+
+}
+div:nth-child(3n){
+    background-color: darkmagenta;
+    animation-delay: 700ms;
+}
+div:nth-child(4n){
+    background-color: darkslateblue;
+    animation-delay: 1000ms;
+}
+div:nth-child(5n){
+    background-color: floralwhite;
+    animation-delay: 400ms;
+}
+div:nth-child(6n){
+    background-color: gold;
+    animation-delay: 900ms;
+}
+div:nth-child(7n){
+    background-color: hotpink;
+    animation-delay: 350ms;
+}
+div:nth-child(8n){
+    background-color: indianred;
+    animation-delay: 620ms;
+}
+div:nth-child(9n){
+    background-color: khaki;
+    animation-delay: 930ms;
+}
+div:nth-child(10n){
+    background-color: rgb(228, 61, 69);
+    animation-delay: 150ms;
+}
+
+.rain{
+    animation: animate .72s linear  infinite;
+}
+
+@keyframes animate{
+    from{
+        top: 0;
+    }
+    to{
+        top: 100vh;
+    }
+}
+
+#toggle{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    cursor: pointer;
+    background: linear-gradient(45deg,crimson,orange,blue,ghostwhite,hotpink);
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 10px limegreen;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+}
+
+#toggle:hover{
+    background: linear-gradient(45deg,rgba(220, 20, 60, 0.637),rgba(255, 166, 0, 0.671),rgba(0, 0, 255, 0.644),rgba(248, 248, 255, 0.678),rgba(255, 105, 180, 0.671));
+}
+
+#toggle:active{
+    box-shadow: none;
+}
